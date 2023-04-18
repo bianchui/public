@@ -197,6 +197,21 @@
         setFixedFrameTime,
         setTimeMulti,
     });
+
+    document.addEventListener(
+        "keydown",
+        (event) => {
+            const keyName = event.key;
+
+            if (keyName == "ArrowUp") {
+                gTimeMulti += 0.1;
+            }
+            if (keyName == "ArrowDown") {
+                gTimeMulti -= 0.1;
+            }
+        },
+        false
+    );
 })();
 
 /*
